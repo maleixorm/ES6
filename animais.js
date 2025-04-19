@@ -1,15 +1,21 @@
-class Cachorro {
-    constructor(cor, tamanho, orelhas) {
+class Animal {
+    constructor(cor, tamanho) {
         this.cor = cor;
         this.tamanho = tamanho;
+    }
+
+    dormir() {
+
+    }
+}
+
+class Cachorro extends Animal {
+    constructor(cor, tamanho, orelhas) {
+        super(cor, tamanho);
         this.orelhas = orelhas;
     }
 
     correr() {
-
-    }
-
-    dormir() {
 
     }
 
@@ -18,18 +24,19 @@ class Cachorro {
     }
 }
 
-class Passaro {
+class Passaro extends Animal  {
     constructor(cor, tamanho, bico) {
-        this.cor = cor;
-        this.tamanho = tamanho;
+        super(cor, tamanho);
         this.bico = bico;
     }
 
-    dormir() {
-
-    }
-
     voar() {
-        
+
     }
 }
+
+let cachorro = new Cachorro('Preto e Amarelo', 'Grande', 'Longas e Caídas');
+console.log(cachorro);
+
+let passaro = new Passaro('Branco e Azul', 'Médio', 'Pequenas');
+console.log(passaro);
