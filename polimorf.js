@@ -20,3 +20,13 @@ class Passaro extends Animal  {
     }
 }
 
+class Papagaio extends Passaro {
+    constructor(cor, tamanho, bico, sabeFalar) {
+        super(cor, tamanho, bico);
+        this.sabeFalar = sabeFalar;
+    }
+    
+    falar() {
+        console.log('Falar');
+    }
+}
