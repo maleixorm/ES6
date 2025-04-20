@@ -16,7 +16,7 @@ class Passaro extends Animal  {
     }
 
     voar() {
-
+        console.log('Voando');
     }
 }
 
@@ -30,3 +30,22 @@ class Papagaio extends Passaro {
         console.log('Falar');
     }
 }
+
+class Avestruz extends Passaro {
+    constructor(cor, tamanho, bico) {
+        super(cor, tamanho, bico);
+    }
+    
+    enterrarCabeca() {
+        console.log('Enterrar cabeça');
+    }
+
+    voar() {
+        console.log('Não sabe voar');
+    }
+}
+
+let avestruz = new Avestruz('azul', '150cm', 'médio');
+console.log(avestruz);
+avestruz.enterrarCabeca();
+avestruz.voar();
