@@ -29,3 +29,9 @@ class Aviao {
         console.log('Levantar Voo.');
     }
 }
+
+let a3 = new Aviao('Vermelho', 'ATR-72');
+
+console.log(a1);
+console.log(a2);
+console.log(a3);
