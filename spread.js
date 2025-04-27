@@ -9,3 +9,16 @@ listaCursos2 = ['android', 'ios', 'linux'];
 listaCursosCompleta = ['web', 'windows', ...listaCursos1, ...listaCursos2];
 
 console.log(listaCursosCompleta);
+
+
+let pessoa = {
+    nome: 'João',
+    idade: 27
+}
+
+let clone = {
+    ...pessoa,
+    endereco: 'Rua abc'
+}
+
+console.log(clone);
