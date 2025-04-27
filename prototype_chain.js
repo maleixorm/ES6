@@ -1,3 +1,5 @@
+Object.prototype.attr4 = 'Z' // Objeto global para a aplicação
+
 let animal = {
     attr1: 'a'
 }
@@ -12,6 +14,6 @@ let ave = {
     attr3: 'c'
 }
 
-console.log(ave.attr1);
+console.log(ave.attr1, ave.attr4);
 console.log(ave.attr2);
 console.log(ave.attr3);
