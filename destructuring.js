@@ -19,3 +19,6 @@ let produto = {
 
 let { descricao, preco} = produto;
 console.log(descricao, '-', preco);
+
+let { detalhes: { fabricante, modelo } } = produto;
+console.log(fabricante, modelo);
